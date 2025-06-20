@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app.routes import challenge_e9
+from app.routes import challenge_e7 
 
 app = FastAPI(
   title="Backend Challenges API",
@@ -8,3 +9,4 @@ app = FastAPI(
 )
 
 app.include_router(challenge_e9.router)
+app.include_router(challenge_e7.router)
